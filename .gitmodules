@@ -1,0 +1,3 @@
+[submodule "node_modules/homey-zigbeedriver"]
+	path = node_modules/homey-zigbeedriver
+	url = git@github.com:athombv/node-homey-zigbeedriver.git
