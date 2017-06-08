@@ -72,6 +72,51 @@
             ]
         },
         {
+            "id": "tradfri-floalt",
+            "name": {
+                "en": "FLOALT Panel"
+            },
+            "class": "light",
+            "capabilities": [ "onoff", "dim", "light_temperature" ],
+            "zigbee": {
+                "manufacturerName": "IKEA of Sweden",
+                "productId": [
+                    "FLOALT panel WS 30x30",
+                    "FLOALT panel WS 30x90",
+                    "FLOALT panel WS 90x30",
+                    "FLOALT panel WS 60x60"
+                ],
+                "deviceId": 544,
+                "profileId": 260,
+                "learnmode": {
+                    "image": "/drivers/tradfri-floalt/assets/icon.svg",
+                    "instruction": {
+                        "en": "Turn the device on and off 6 times",
+                        "nl": "Zet het apparaat 6 keer aan en uit"
+                    }
+                }
+            },
+            "images": {
+                "large": "/drivers/tradfri-floalt/assets/images/large.png",
+                "small": "/drivers/tradfri-floalt/assets/images/small.png"
+            },
+            "settings": [
+                {
+                    "id": "transtime",
+                    "type": "number",
+                    "label": {
+                        "nl": "Transitie tijd in seconden",
+                        "en": "Transition time in Seconds"
+                    },
+                    "value": 1,
+                    "attr": {
+                        "min": 0,
+                        "max": 20
+                    }
+                }
+            ]
+        },
+        {
             "id": "tradfri-dim",
             "name": {
                 "en": "Dimmable Bulb"
@@ -124,7 +169,7 @@
                 "deviceId": 2064,
                 "profileId": 260,
                 "learnmode": {
-                    "image": "/drivers/tradfri-dim/assets/icon.svg",
+                    "image": "/drivers/tradfri-dimmer/assets/icon_pair.svg",
                     "instruction": {
                         "en": "Press the pair button 4 times in 5 seconds",
                         "nl": "Druk 4 keer op de pair knop binnen 5 seconden"
@@ -132,8 +177,8 @@
                 }
             },
             "images": {
-                "large": "/drivers/tradfri-dim/assets/images/large.png",
-                "small": "/drivers/tradfri-dim/assets/images/small.png"
+                "large": "/drivers/tradfri-dimmer/assets/images/large.png",
+                "small": "/drivers/tradfri-dimmer/assets/images/small.png"
             },
             "settings": [
                 {
