@@ -1,229 +1,245 @@
 {
-    "id": "com.ikea.tradfri",
-    "name": {
-        "en": "IKEA Trådfri"
-    },
-    "description": {
-        "en": "IKEA Trådfri devices for Homey",
-        "nl": "IKEA Trådfri apparaten voor Homey"
-    },
-    "category": [
-        "lights"
-    ],
-    "version": "1.0.0",
-    "compatibility": "0.x || 1.x",
-    "author": {
-        "name": "Athom B.V.",
-        "email": "info@athom.com"
-    },
-    "images": {
-        "large": "/assets/images/large.png",
-        "small": "/assets/images/small.png"
-    },
-    "drivers": [
-        {
-            "id": "tradfri-temp",
-            "name": {
-                "en": "Tunable White Bulb"
-            },
-            "class": "light",
-            "capabilities": [ "onoff", "dim", "light_temperature" ],
-            "zigbee": {
-                "manufacturerName": "IKEA of Sweden",
-                "productId": [
-                    "TRADFRI bulb E27 WS\ufffdopal 980lm",
-                    "TRADFRI bulb E27 WS opal 980lm",
-                    "TRADFRI bulb GU10 WS 400lm",
-                    "TRADFRI bulb E12 WS opal 400lm",
-                    "TRADFRI bulb E14 WS opal 400lm",
-                    "TRADFRI bulb E26 WS clear 950lm",
-                    "TRADFRI bulb E26 WS opal 980lm",
-                    "TRADFRI bulb E26 WS\ufffdopal 980lm",
-                    "TRADFRI bulb E27 WS clear 950lm"
-                ],
-                "deviceId": 544,
-                "profileId": 260,
-                "learnmode": {
-                    "image": "/drivers/tradfri-temp/assets/icon.svg",
-                    "instruction": {
-                        "en": "Turn the device on and off 6 times",
-                        "nl": "Zet het apparaat 6 keer aan en uit"
-                    }
-                }
-            },
-            "images": {
-                "large": "/drivers/tradfri-temp/assets/images/large.png",
-                "small": "/drivers/tradfri-temp/assets/images/small.png"
-            },
-            "settings": [
-                {
-                    "id": "transtime",
-                    "type": "number",
-                    "label": {
-                        "nl": "Transitie tijd in seconden",
-                        "en": "Transition time in Seconds"
-                    },
-                    "value": 1,
-                    "attr": {
-                        "min": 0,
-                        "max": 20
-                    }
-                }
-            ]
-        },
-        {
-            "id": "tradfri-floalt",
-            "name": {
-                "en": "FLOALT Panel"
-            },
-            "class": "light",
-            "capabilities": [ "onoff", "dim", "light_temperature" ],
-            "zigbee": {
-                "manufacturerName": "IKEA of Sweden",
-                "productId": [
-                    "FLOALT panel WS 30x30",
-                    "FLOALT panel WS 30x90",
-                    "FLOALT panel WS 90x30",
-                    "FLOALT panel WS 60x60"
-                ],
-                "deviceId": 544,
-                "profileId": 260,
-                "learnmode": {
-                    "image": "/drivers/tradfri-floalt/assets/icon.svg",
-                    "instruction": {
-                        "en": "Turn the device on and off 6 times",
-                        "nl": "Zet het apparaat 6 keer aan en uit"
-                    }
-                }
-            },
-            "images": {
-                "large": "/drivers/tradfri-floalt/assets/images/large.png",
-                "small": "/drivers/tradfri-floalt/assets/images/small.png"
-            },
-            "settings": [
-                {
-                    "id": "transtime",
-                    "type": "number",
-                    "label": {
-                        "nl": "Transitie tijd in seconden",
-                        "en": "Transition time in Seconds"
-                    },
-                    "value": 1,
-                    "attr": {
-                        "min": 0,
-                        "max": 20
-                    }
-                }
-            ]
-        },
-        {
-            "id": "tradfri-dim",
-            "name": {
-                "en": "Dimmable Bulb"
-            },
-            "class": "light",
-            "capabilities": [ "onoff", "dim" ],
-            "zigbee": {
-                "manufacturerName": "IKEA of Sweden",
-                "productId": "TRADFRI bulb E27 opal 1000lm",
-                "deviceId": 256,
-                "profileId": 260,
-                "learnmode": {
-                    "image": "/drivers/tradfri-dim/assets/icon.svg",
-                    "instruction": {
-                        "en": "Turn the device on and off 6 times",
-                        "nl": "Zet het apparaat 6 keer aan en uit"
-                    }
-                }
-            },
-            "images": {
-                "large": "/drivers/tradfri-dim/assets/images/large.png",
-                "small": "/drivers/tradfri-dim/assets/images/small.png"
-            },
-            "settings": [
-                {
-                    "id": "transtime",
-                    "type": "number",
-                    "label": {
-                        "nl": "Transitie tijd in seconden",
-                        "en": "Transition time in Seconds"
-                    },
-                    "value": 1,
-                    "attr": {
-                        "min": 0,
-                        "max": 20
-                    }
-                }
-            ]
-        },
-        {
-            "id": "tradfri-dimmer",
-            "name": {
-                "en": "Rotating Dimmer"
-            },
-            "class": "sensor",
-            "capabilities": [ ],
-            "zigbee": {
-                "manufacturerName": "IKEA of Sweden",
-                "productId": "TRADFRI dimmer",
-                "deviceId": 2064,
-                "profileId": 260,
-                "learnmode": {
-                    "image": "/drivers/tradfri-dimmer/assets/icon_pair.svg",
-                    "instruction": {
-                        "en": "Press the pair button 4 times in 5 seconds",
-                        "nl": "Druk 4 keer op de pair knop binnen 5 seconden"
-                    }
-                }
-            },
-            "images": {
-                "large": "/drivers/tradfri-dimmer/assets/images/large.png",
-                "small": "/drivers/tradfri-dimmer/assets/images/small.png"
-            },
-            "settings": [
-                {
-                    "id": "sensitivity",
-                    "type": "number",
-                    "label": {
-                        "nl": "Dimmer gevoeligheid",
-                        "en": "Dimmer sensitivity"
-                    },
-                    "value": 1,
-                    "attr": {
-                        "min": 0.1,
-                        "max": 2
-                    }
-                }
-            ]
+  "id": "com.ikea.tradfri",
+  "name": {
+    "en": "IKEA Trådfri"
+  },
+  "description": {
+    "en": "IKEA Trådfri",
+    "nl": "IKEA Trådfri"
+  },
+  "category": [
+    "lights"
+  ],
+  "version": "1.0.1",
+  "compatibility": ">=1.1.0",
+  "author": {
+    "name": "Athom B.V.",
+    "email": "info@athom.com"
+  },
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "drivers": [
+    {
+      "id": "tunable_white_bulb",
+      "name": {
+        "en": "Tunable White Bulb",
+        "nl": "Instelbare Witte Lamp"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb E27 WS\ufffdopal 980lm",
+          "TRADFRI bulb E27 WS opal 980lm",
+          "TRADFRI bulb GU10 WS 400lm",
+          "TRADFRI bulb E12 WS opal 400lm",
+          "TRADFRI bulb E14 WS opal 400lm",
+          "TRADFRI bulb E26 WS clear 950lm",
+          "TRADFRI bulb E26 WS opal 980lm",
+          "TRADFRI bulb E26 WS\ufffdopal 980lm",
+          "TRADFRI bulb E27 WS clear 950lm"
+        ],
+        "deviceId": 544,
+        "profileId": 260,
+        "learnmode": {
+          "image": "/drivers/tunable_white_bulb/assets/icon.svg",
+          "instruction": {
+            "en": "Turn the device on and off 6 times",
+            "nl": "Zet het apparaat 6 keer aan en uit"
+          }
         }
-    ],
-    "flow": {
-        "triggers": [
-            {
-                "id": "dimmer_rotated",
-                "title":{
-                    "en": "Trådfri dimmer rotated",
-                    "nl": "Trådfri dimmer gedraait"
-                },
-                "args": [
-                    {
-                        "name": "device",
-                        "type": "device",
-                        "filter": "driver_id=tradfri-dimmer"
-                    }
-                ],
-                "tokens": [
-                    {
-                        "name": "value",
-                        "type": "number",
-                        "title": {
-                            "en": "Value",
-                            "nl": "Waarde"
-                        },
-                        "example": 1
-                    }
-                ]
-            }
-        ]
+      },
+      "images": {
+        "large": "/drivers/tunable_white_bulb/assets/images/large.png",
+        "small": "/drivers/tunable_white_bulb/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "transtime",
+          "type": "number",
+          "label": {
+            "nl": "Transitie tijd in seconden",
+            "en": "Transition time in seconds"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "floalt_panel",
+      "name": {
+        "en": "Floalt Panel",
+        "nl": "Floalt Paneel"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "FLOALT panel WS 30x30",
+          "FLOALT panel WS 30x90",
+          "FLOALT panel WS 90x30",
+          "FLOALT panel WS 60x60"
+        ],
+        "deviceId": 544,
+        "profileId": 260,
+        "learnmode": {
+          "image": "/drivers/floalt_panel/assets/icon.svg",
+          "instruction": {
+            "en": "Turn the device on and off 6 times",
+            "nl": "Zet het apparaat 6 keer aan en uit"
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/floalt_panel/assets/images/large.png",
+        "small": "/drivers/floalt_panel/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "transtime",
+          "type": "number",
+          "label": {
+            "nl": "Transitie tijd in seconden",
+            "en": "Transition time in seconds"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "dimmable_bulb",
+      "name": {
+        "en": "Dimmable Bulb",
+        "nl": "Dimbare Lamp"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": "TRADFRI bulb E27 opal 1000lm",
+        "deviceId": 256,
+        "profileId": 260,
+        "learnmode": {
+          "image": "/drivers/dimmable_bulb/assets/icon.svg",
+          "instruction": {
+            "en": "Turn the device on and off 6 times",
+            "nl": "Zet het apparaat 6 keer aan en uit"
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/dimmable_bulb/assets/images/large.png",
+        "small": "/drivers/dimmable_bulb/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "transtime",
+          "type": "number",
+          "label": {
+            "nl": "Transitie tijd in seconden",
+            "en": "Transition time in seconds"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "remote_rotating_dimmer",
+      "name": {
+        "en": "Rotating Dimmer",
+        "nl": "Draai Dimmer"
+      },
+      "class": "sensor",
+      "capabilities": [],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": "TRADFRI dimmer",
+        "deviceId": 2064,
+        "profileId": 260,
+        "learnmode": {
+          "image": "/drivers/remote_rotating_dimmer/assets/icon_pair.svg",
+          "instruction": {
+            "en": "Press the pair button 4 times in 5 seconds",
+            "nl": "Druk 4 keer op de pair knop binnen 5 seconden"
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/remote_rotating_dimmer/assets/images/large.png",
+        "small": "/drivers/remote_rotating_dimmer/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "sensitivity",
+          "type": "number",
+          "label": {
+            "nl": "Dimmer gevoeligheid",
+            "en": "Dimmer sensitivity"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0.1,
+            "max": 2,
+            "step": 0.1
+          }
+        }
+      ]
     }
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "dimmer_rotated",
+        "title": {
+          "en": "Dimmer was rotated",
+          "nl": "Dimmer is gedraaid"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=remote_rotating_dimmer"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "example": 1
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -1,9 +1,7 @@
-"use strict";
+'use strict';
 
-function init() {
-	
-	Homey.log("IKEA Trådfri Started");
-	
-}
+const Log = require('homey-log').Log;
 
-module.exports.init = init;
+module.exports.init = () => {
+	console.log(`${Homey.manifest.id} running...`);
+};
