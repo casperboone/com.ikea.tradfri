@@ -5,7 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "homey-log": "^1.0.3",
-    "homey-zigbeedriver": "git+https://git@github.com/athombv/node-homey-zigbeedriver.git"
+    "homey-meshdriver": "https://github.com/athombv/node-homey-meshdriver"
   },
   "devDependencies": {},
   "scripts": {
