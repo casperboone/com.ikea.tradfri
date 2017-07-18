@@ -12,6 +12,7 @@
   ],
   "version": "1.0.1",
   "compatibility": ">=1.1.0",
+  "sdk": 2,
   "author": {
     "name": "Athom B.V.",
     "email": "info@athom.com"
@@ -77,51 +78,43 @@
       ]
     },
     {
-      "id": "floalt_panel",
+      "id": "remote_rotating_dimmer",
       "name": {
-        "en": "Floalt Panel",
-        "nl": "Floalt Paneel"
+        "en": "Rotating Dimmer",
+        "nl": "Draai Dimmer"
       },
-      "class": "light",
-      "capabilities": [
-        "onoff",
-        "dim",
-        "light_temperature"
-      ],
+      "class": "sensor",
+      "capabilities": [],
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
-        "productId": [
-          "FLOALT panel WS 30x30",
-          "FLOALT panel WS 30x90",
-          "FLOALT panel WS 90x30",
-          "FLOALT panel WS 60x60"
-        ],
-        "deviceId": 544,
+        "productId": "TRADFRI dimmer",
+        "deviceId": 2064,
         "profileId": 260,
         "learnmode": {
-          "image": "/drivers/floalt_panel/assets/icon.svg",
+          "image": "/drivers/remote_rotating_dimmer/assets/icon_pair.svg",
           "instruction": {
-            "en": "Turn the device on and off 6 times",
-            "nl": "Zet het apparaat 6 keer aan en uit"
+            "en": "Press the pair button 4 times in 5 seconds",
+            "nl": "Druk 4 keer op de pair knop binnen 5 seconden"
           }
         }
       },
       "images": {
-        "large": "/drivers/floalt_panel/assets/images/large.png",
-        "small": "/drivers/floalt_panel/assets/images/small.png"
+        "large": "/drivers/remote_rotating_dimmer/assets/images/large.png",
+        "small": "/drivers/remote_rotating_dimmer/assets/images/small.png"
       },
       "settings": [
         {
-          "id": "transtime",
+          "id": "sensitivity",
           "type": "number",
           "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
+            "nl": "Dimmer gevoeligheid",
+            "en": "Dimmer sensitivity"
           },
           "value": 1,
           "attr": {
-            "min": 0,
-            "max": 20
+            "min": 0.1,
+            "max": 2,
+            "step": 0.1
           }
         }
       ]
@@ -171,43 +164,51 @@
       ]
     },
     {
-      "id": "remote_rotating_dimmer",
+      "id": "floalt_panel",
       "name": {
-        "en": "Rotating Dimmer",
-        "nl": "Draai Dimmer"
+        "en": "Floalt Panel",
+        "nl": "Floalt Paneel"
       },
-      "class": "sensor",
-      "capabilities": [],
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
-        "productId": "TRADFRI dimmer",
-        "deviceId": 2064,
+        "productId": [
+          "FLOALT panel WS 30x30",
+          "FLOALT panel WS 30x90",
+          "FLOALT panel WS 90x30",
+          "FLOALT panel WS 60x60"
+        ],
+        "deviceId": 544,
         "profileId": 260,
         "learnmode": {
-          "image": "/drivers/remote_rotating_dimmer/assets/icon_pair.svg",
+          "image": "/drivers/floalt_panel/assets/icon.svg",
           "instruction": {
-            "en": "Press the pair button 4 times in 5 seconds",
-            "nl": "Druk 4 keer op de pair knop binnen 5 seconden"
+            "en": "Turn the device on and off 6 times",
+            "nl": "Zet het apparaat 6 keer aan en uit"
           }
         }
       },
       "images": {
-        "large": "/drivers/remote_rotating_dimmer/assets/images/large.png",
-        "small": "/drivers/remote_rotating_dimmer/assets/images/small.png"
+        "large": "/drivers/floalt_panel/assets/images/large.png",
+        "small": "/drivers/floalt_panel/assets/images/small.png"
       },
       "settings": [
         {
-          "id": "sensitivity",
+          "id": "transtime",
           "type": "number",
           "label": {
-            "nl": "Dimmer gevoeligheid",
-            "en": "Dimmer sensitivity"
+            "nl": "Transitie tijd in seconden",
+            "en": "Transition time in seconds"
           },
           "value": 1,
           "attr": {
-            "min": 0.1,
-            "max": 2,
-            "step": 0.1
+            "min": 0,
+            "max": 20
           }
         }
       ]

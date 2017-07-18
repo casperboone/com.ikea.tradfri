@@ -1,7 +1,12 @@
 'use strict';
 
+const Homey = require('homey');
 const Log = require('homey-log').Log;
 
-module.exports.init = () => {
-	console.log(`${Homey.manifest.id} running...`);
-};
+class IkeaTradfriApp extends Homey.App {
+	onInit() {
+		this.log('init');
+	}
+}
+
+module.exports = IkeaTradfriApp;
