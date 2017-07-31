@@ -52,8 +52,8 @@
         "learnmode": {
           "image": "/drivers/tunable_white_bulb/assets/icon.svg",
           "instruction": {
-            "en": "Turn the device on and off 6 times",
-            "nl": "Zet het apparaat 6 keer aan en uit"
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start, try turning the device on and off 6 times.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd, probeer hem dan 6 keer aan en uit te zetten."
           }
         }
       },
@@ -138,8 +138,8 @@
         "learnmode": {
           "image": "/drivers/dimmable_bulb/assets/icon.svg",
           "instruction": {
-            "en": "Turn the device on and off 6 times",
-            "nl": "Zet het apparaat 6 keer aan en uit"
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start, try turning the device on and off 6 times.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd, probeer hem dan 6 keer aan en uit te zetten."
           }
         }
       },
@@ -188,8 +188,8 @@
         "learnmode": {
           "image": "/drivers/floalt_panel/assets/icon.svg",
           "instruction": {
-            "en": "Turn the device on and off 6 times",
-            "nl": "Zet het apparaat 6 keer aan en uit"
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start, try turning the device on and off 6 times.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd, probeer hem dan 6 keer aan en uit te zetten."
           }
         }
       },
