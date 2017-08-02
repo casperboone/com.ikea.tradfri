@@ -10,7 +10,7 @@
   "category": [
     "lights"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "compatibility": ">=1.5.0",
   "sdk": 2,
   "author": {
@@ -52,8 +52,8 @@
         "learnmode": {
           "image": "/drivers/tunable_white_bulb/assets/icon.svg",
           "instruction": {
-            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start, try turning the device on and off 6 times.",
-            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd, probeer hem dan 6 keer aan en uit te zetten."
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times very quickly. It will flash twice to indicate is has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
           }
         }
       },
@@ -138,8 +138,8 @@
         "learnmode": {
           "image": "/drivers/dimmable_bulb/assets/icon.svg",
           "instruction": {
-            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start, try turning the device on and off 6 times.",
-            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd, probeer hem dan 6 keer aan en uit te zetten."
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times very quickly. It will flash twice to indicate is has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
           }
         }
       },
@@ -188,8 +188,8 @@
         "learnmode": {
           "image": "/drivers/floalt_panel/assets/icon.svg",
           "instruction": {
-            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start, try turning the device on and off 6 times.",
-            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd, probeer hem dan 6 keer aan en uit te zetten."
+            "en": "Toggle the Floalt Panel to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the Floalt Panel by toggling it 6 times very quickly. It will flash twice to indicate is has been reset.",
+            "nl": "Zet het Floalt Paneel uit en weer aan.\n\nWordt het Floalt Paneel niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de lamp aan en uit te zetten. Het Floalt Paneel zal twee keer knipperen om aan te geven dat hij is gereset."
           }
         }
       },
