@@ -10,7 +10,7 @@
   "category": [
     "lights"
   ],
-  "version": "1.0.4",
+  "version": "1.0.5",
   "compatibility": ">=1.5.0",
   "sdk": 2,
   "author": {
@@ -87,7 +87,7 @@
       "capabilities": [],
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
-        "productId": "TRADFRI dimmer",
+        "productId": ["TRADFRI dimmer", "TRADFRI wireless dimmer"],
         "deviceId": 2064,
         "profileId": 260,
         "learnmode": {
