@@ -98,8 +98,8 @@
         "learnmode": {
           "image": "/drivers/remote_rotating_dimmer/assets/icon_pair.svg",
           "instruction": {
-            "en": "Press the pair button 4 times in 5 seconds",
-            "nl": "Druk 4 keer op de pair knop binnen 5 seconden"
+            "en": "Open up the Rotating Dimmer to access the pair button. Press the pair button 4 times in 5 seconds",
+            "nl": "Maak de Draai Dimmer open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden"
           }
         }
       },
