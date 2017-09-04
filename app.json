@@ -10,7 +10,7 @@
   "category": [
     "lights"
   ],
-  "version": "1.0.9",
+  "version": "1.0.10",
   "compatibility": ">=1.5.0",
   "sdk": 2,
   "author": {
@@ -50,7 +50,7 @@
           "TRADFRI bulb E27 WS clear 950lm"
         ],
         "deviceId": 544,
-        "profileId": 260,
+        "profileId": [260, 49246],
         "learnmode": {
           "image": "/drivers/tunable_white_bulb/assets/icon.svg",
           "instruction": {
@@ -94,7 +94,7 @@
           "TRADFRI wireless dimmer"
         ],
         "deviceId": 2064,
-        "profileId": 260,
+        "profileId": [260, 49246],
         "learnmode": {
           "image": "/drivers/remote_rotating_dimmer/assets/icon_pair.svg",
           "instruction": {
@@ -139,7 +139,7 @@
         "manufacturerName": "IKEA of Sweden",
         "productId": "TRADFRI bulb E27 opal 1000lm",
         "deviceId": 256,
-        "profileId": 260,
+        "profileId": [260, 49246],
         "learnmode": {
           "image": "/drivers/dimmable_bulb/assets/icon.svg",
           "instruction": {
@@ -189,7 +189,7 @@
           "FLOALT panel WS 60x60"
         ],
         "deviceId": 544,
-        "profileId": 260,
+        "profileId": [260, 49246],
         "learnmode": {
           "image": "/drivers/floalt_panel/assets/icon.svg",
           "instruction": {
