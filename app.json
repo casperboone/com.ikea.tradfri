@@ -10,7 +10,7 @@
   "category": [
     "lights"
   ],
-  "version": "1.0.10",
+  "version": "1.1.0",
   "compatibility": ">=1.5.0",
   "sdk": 2,
   "author": {
@@ -213,6 +213,53 @@
       "images": {
         "large": "/drivers/dimmable_bulb/assets/images/large.png",
         "small": "/drivers/dimmable_bulb/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "transtime",
+          "type": "number",
+          "label": {
+            "nl": "Transitie tijd in seconden",
+            "en": "Transition time in seconds"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "dimmable_spot",
+      "name": {
+        "en": "Dimmable Spot",
+        "nl": "Dimbare Spot"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": "TRADFRI bulb GU10 W 400lm",
+        "deviceId": 256,
+        "profileId": [
+          260,
+          49246
+        ],
+        "learnmode": {
+          "image": "/drivers/dimmable_spot/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the spot to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 6 times very quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de spot uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de spot aan en uit te zetten. De spot zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/dimmable_spot/assets/images/large.png",
+        "small": "/drivers/dimmable_spot/assets/images/small.png"
       },
       "settings": [
         {
