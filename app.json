@@ -50,7 +50,63 @@
           "TRADFRI bulb E27 WS clear 950lm"
         ],
         "deviceId": 544,
-        "profileId": [260, 49246],
+        "profileId": [
+          260,
+          49246
+        ],
+        "learnmode": {
+          "image": "/drivers/tunable_white_bulb/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times very quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/tunable_white_bulb/assets/images/large.png",
+        "small": "/drivers/tunable_white_bulb/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "transtime",
+          "type": "number",
+          "label": {
+            "nl": "Transitie tijd in seconden",
+            "en": "Transition time in seconds"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "rgb_bulb",
+      "name": {
+        "en": "RGB Bulb",
+        "nl": "RGB Lamp"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation",
+        "light_temperature",
+        "light_mode"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb E27 CWS opal 600lm"
+        ],
+        "deviceId": 512,
+        "profileId": [
+          260,
+          49246
+        ],
         "learnmode": {
           "image": "/drivers/tunable_white_bulb/assets/icon.svg",
           "instruction": {
@@ -94,7 +150,10 @@
           "TRADFRI wireless dimmer"
         ],
         "deviceId": 2064,
-        "profileId": [260, 49246],
+        "profileId": [
+          260,
+          49246
+        ],
         "learnmode": {
           "image": "/drivers/remote_rotating_dimmer/assets/icon_pair.svg",
           "instruction": {
@@ -139,7 +198,10 @@
         "manufacturerName": "IKEA of Sweden",
         "productId": "TRADFRI bulb E27 opal 1000lm",
         "deviceId": 256,
-        "profileId": [260, 49246],
+        "profileId": [
+          260,
+          49246
+        ],
         "learnmode": {
           "image": "/drivers/dimmable_bulb/assets/icon.svg",
           "instruction": {
@@ -189,7 +251,10 @@
           "FLOALT panel WS 60x60"
         ],
         "deviceId": 544,
-        "profileId": [260, 49246],
+        "profileId": [
+          260,
+          49246
+        ],
         "learnmode": {
           "image": "/drivers/floalt_panel/assets/icon.svg",
           "instruction": {
