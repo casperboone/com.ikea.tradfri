@@ -4,9 +4,8 @@
   "description": "This app allows you to connect your IKEA Trådfri Devices to Homey",
   "main": "app.js",
   "dependencies": {
-    "color-space": "^1.14.7",
     "homey-log": "git+https://github.com/athombv/node-homey-log.git",
-    "homey-meshdriver": "^1.0.4"
+    "homey-meshdriver": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
