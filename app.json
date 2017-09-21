@@ -65,22 +65,7 @@
       "images": {
         "large": "/drivers/tunable_white_bulb/assets/images/large.png",
         "small": "/drivers/tunable_white_bulb/assets/images/small.png"
-      },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
-          }
-        }
-      ]
+      }
     },
     {
       "id": "rgb_bulb",
@@ -118,22 +103,7 @@
       "images": {
         "large": "/drivers/tunable_white_bulb/assets/images/large.png",
         "small": "/drivers/tunable_white_bulb/assets/images/small.png"
-      },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
-          }
-        }
-      ]
+      }
     },
     {
       "id": "remote_rotating_dimmer",
@@ -213,22 +183,7 @@
       "images": {
         "large": "/drivers/dimmable_bulb/assets/images/large.png",
         "small": "/drivers/dimmable_bulb/assets/images/small.png"
-      },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
-          }
-        }
-      ]
+      }
     },
     {
       "id": "dimmable_spot",
@@ -260,22 +215,7 @@
       "images": {
         "large": "/drivers/dimmable_spot/assets/images/large.png",
         "small": "/drivers/dimmable_spot/assets/images/small.png"
-      },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
-          }
-        }
-      ]
+      }
     },
     {
       "id": "floalt_panel",
@@ -313,22 +253,7 @@
       "images": {
         "large": "/drivers/floalt_panel/assets/images/large.png",
         "small": "/drivers/floalt_panel/assets/images/small.png"
-      },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
-          }
-        }
-      ]
+      }
     }
   ],
   "flow": {
