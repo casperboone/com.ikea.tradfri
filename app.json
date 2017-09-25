@@ -166,7 +166,10 @@
       ],
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
-        "productId": "TRADFRI bulb E27 opal 1000lm",
+        "productId": [
+          "TRADFRI bulb E27 opal 1000lm",
+          "TRADFRI bulb E27 W opal 1000lm"
+        ],
         "deviceId": 256,
         "profileId": [
           260,
