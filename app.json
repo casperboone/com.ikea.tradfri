@@ -40,9 +40,7 @@
           "TRADFRI bulb E27 WS�opal 980lm",
           "TRADFRI bulb E27 WS�opal 980lm",
           "TRADFRI bulb E27 WS opal 980lm",
-          "TRADFRI bulb GU10 WS 400lm",
           "TRADFRI bulb E12 WS opal 400lm",
-          "TRADFRI bulb E14 WS opal 400lm",
           "TRADFRI bulb E26 WS clear 950lm",
           "TRADFRI bulb E26 WS opal 980lm",
           "TRADFRI bulb E26 WS�opal 980lm",
@@ -65,6 +63,39 @@
       "images": {
         "large": "/drivers/tunable_white_bulb/assets/images/large.png",
         "small": "/drivers/tunable_white_bulb/assets/images/small.png"
+      }
+    },
+    {
+      "id": "tunable_white_bulb_e14",
+      "name": {
+        "en": "Tunable White Bulb (E14)",
+        "nl": "Instelbare Witte Lamp (E14)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": "TRADFRI bulb E14 WS opal 400lm",
+        "deviceId": 544,
+        "profileId": [
+          260,
+          49246
+        ],
+        "learnmode": {
+          "image": "/drivers/tunable_white_bulb_e14/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times very quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/tunable_white_bulb_e14/assets/images/large.jpg",
+        "small": "/drivers/tunable_white_bulb_e14/assets/images/small.jpg"
       }
     },
     {
@@ -250,6 +281,39 @@
       "images": {
         "large": "/drivers/dimmable_spot/assets/images/large.jpg",
         "small": "/drivers/dimmable_spot/assets/images/small.jpg"
+      }
+    },
+    {
+      "id": "tunable_spot",
+      "name": {
+        "en": "Tunable Spot (GU10)",
+        "nl": "Instelbare Witte Spot (GU10)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": "TRADFRI bulb GU10 WS 400lm",
+        "deviceId": 544,
+        "profileId": [
+          260,
+          49246
+        ],
+        "learnmode": {
+          "image": "/drivers/tunable_spot/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the spot to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 6 times very quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de spot uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de spot aan en uit te zetten. De spot zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/tunable_spot/assets/images/large.jpg",
+        "small": "/drivers/tunable_spot/assets/images/small.jpg"
       }
     },
     {
