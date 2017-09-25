@@ -25,8 +25,8 @@
     {
       "id": "tunable_white_bulb",
       "name": {
-        "en": "Tunable White Bulb",
-        "nl": "Instelbare Witte Lamp"
+        "en": "Tunable White Bulb (E27)",
+        "nl": "Instelbare Witte Lamp (E27)"
       },
       "class": "light",
       "capabilities": [
@@ -70,8 +70,8 @@
     {
       "id": "rgb_bulb",
       "name": {
-        "en": "RGB Bulb",
-        "nl": "RGB Lamp"
+        "en": "RGB Bulb (E27)",
+        "nl": "RGB Lamp (E27)"
       },
       "class": "light",
       "capabilities": [
@@ -223,8 +223,8 @@
     {
       "id": "dimmable_spot",
       "name": {
-        "en": "Dimmable Spot",
-        "nl": "Dimbare Spot"
+        "en": "Dimmable Spot (GU10)",
+        "nl": "Dimbare Spot (GU10)"
       },
       "class": "light",
       "capabilities": [
