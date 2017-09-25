@@ -65,22 +65,45 @@
       "images": {
         "large": "/drivers/tunable_white_bulb/assets/images/large.png",
         "small": "/drivers/tunable_white_bulb/assets/images/small.png"
+      }
+    },
+    {
+      "id": "rgb_bulb",
+      "name": {
+        "en": "RGB Bulb",
+        "nl": "RGB Lamp"
       },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation",
+        "light_temperature",
+        "light_mode"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb E27 CWS opal 600lm"
+        ],
+        "deviceId": 512,
+        "profileId": [
+          260,
+          49246
+        ],
+        "learnmode": {
+          "image": "/drivers/tunable_white_bulb/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times very quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
           }
         }
-      ]
+      },
+      "images": {
+        "large": "/drivers/tunable_white_bulb/assets/images/large.png",
+        "small": "/drivers/tunable_white_bulb/assets/images/small.png"
+      }
     },
     {
       "id": "remote_rotating_dimmer",
@@ -160,22 +183,7 @@
       "images": {
         "large": "/drivers/dimmable_bulb/assets/images/large.png",
         "small": "/drivers/dimmable_bulb/assets/images/small.png"
-      },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
-          }
-        }
-      ]
+      }
     },
     {
       "id": "dimmable_spot",
@@ -207,22 +215,7 @@
       "images": {
         "large": "/drivers/dimmable_spot/assets/images/large.png",
         "small": "/drivers/dimmable_spot/assets/images/small.png"
-      },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
-          }
-        }
-      ]
+      }
     },
     {
       "id": "floalt_panel",
@@ -260,22 +253,7 @@
       "images": {
         "large": "/drivers/floalt_panel/assets/images/large.png",
         "small": "/drivers/floalt_panel/assets/images/small.png"
-      },
-      "settings": [
-        {
-          "id": "transtime",
-          "type": "number",
-          "label": {
-            "nl": "Transitie tijd in seconden",
-            "en": "Transition time in seconds"
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 20
-          }
-        }
-      ]
+      }
     }
   ],
   "flow": {
