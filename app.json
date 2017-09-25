@@ -248,8 +248,8 @@
         }
       },
       "images": {
-        "large": "/drivers/dimmable_spot/assets/images/large.png",
-        "small": "/drivers/dimmable_spot/assets/images/small.png"
+        "large": "/drivers/dimmable_spot/assets/images/large.jpg",
+        "small": "/drivers/dimmable_spot/assets/images/small.jpg"
       }
     },
     {
