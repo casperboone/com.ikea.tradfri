@@ -10,7 +10,7 @@
   "category": [
     "lights"
   ],
-  "version": "1.2.10",
+  "version": "1.2.11",
   "compatibility": ">=1.5.0",
   "sdk": 2,
   "author": {
@@ -606,7 +606,10 @@
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
         "productId": "TRADFRI bulb GU10 WS 400lm",
-        "deviceId": 544,
+        "deviceId": [
+          544,
+          268
+        ],
         "profileId": [
           260,
           49246
