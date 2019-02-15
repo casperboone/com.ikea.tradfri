@@ -5,6 +5,7 @@ This app allows you to connect your IKEA Trådfri Devices to Homey
 ### Changelog
 Version 1.2.11
 * Add support for Tunable Spot (GU10) with mirror (halogen) appearance
+* Improved error message on failed command
 
 Version 1.2.10
 * Improve Rotating Dimmer responsiveness
