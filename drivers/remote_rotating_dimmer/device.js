@@ -27,12 +27,28 @@ class RemoteRotatingDimmer extends ZigBeeDevice {
 		this.dimmerRotatedTriggerDevice = new Homey.FlowCardTriggerDevice('dimmer_rotated');
 		this.dimmerRotatedTriggerDevice.register();
 
-		// Create debouncer for trigger Flow
-		this.triggerDimmerRotatedFlow = this.debounce(() => {
+		// Create throttled function for trigger Flow
+		this.triggerDimmerRotatedFlow = this.throttle(() => {
 			const parsedValue = Math.round(this.value / maxValue * 100) / 100;
 			return this.dimmerRotatedTriggerDevice.trigger(this, { value: parsedValue }, null)
-				.then(() => this.log(`triggered dimmer_rotated, value ${parsedValue}`))
+				.then(() => {
+					this.log(`trigger value ${parsedValue}`);
+				})
 				.catch(err => this.error('Error triggering dimmer_rotated', err));
+		}, 100);
+
+		// Register dimmer_rotate_stopped Flow Card Device Trigger
+		this.dimmerRotateStoppedTriggerDevice = new Homey.FlowCardTriggerDevice('dimmer_rotate_stopped');
+		this.dimmerRotateStoppedTriggerDevice.register();
+
+		// Create debounced function for trigger Flow
+		this.triggerDimmerRotateStoppedFlow = this.debounce(() => {
+			const parsedValue = Math.round(this.value / maxValue * 100) / 100;
+			return this.dimmerRotateStoppedTriggerDevice.trigger(this, { value: parsedValue }, null)
+				.then(() => {
+					this.log(`stopped trigger value ${parsedValue}`);
+				})
+				.catch(err => this.error('Error triggering dimmer_rotate_stopped', err));
 		}, 1000);
 	}
 
@@ -46,7 +62,8 @@ class RemoteRotatingDimmer extends ZigBeeDevice {
 		this.movingSince = Date.now();
 		this.moveDirection = payload.movemode === 0 ? 1 : -1;
 		this.rate = payload.rate;
-		return this.triggerDimmerRotatedFlow();
+		this.triggerDimmerRotatedFlow();
+		this.triggerDimmerRotateStoppedFlow();
 	}
 
 	/**
@@ -72,7 +89,8 @@ class RemoteRotatingDimmer extends ZigBeeDevice {
 			this.moving = false;
 			this.movingSince = null;
 		}
-		return this.triggerDimmerRotatedFlow();
+		this.triggerDimmerRotatedFlow();
+		this.triggerDimmerRotateStoppedFlow();
 	}
 
 	/**
@@ -85,8 +103,8 @@ class RemoteRotatingDimmer extends ZigBeeDevice {
 	debounce(func, wait, immediate) {
 		let timeout;
 		return function () {
-			let context = this,
-				args = arguments;
+			const context = this;
+			const args = arguments;
 			const later = function () {
 				timeout = null;
 				if (!immediate) func.apply(context, args);
@@ -97,6 +115,23 @@ class RemoteRotatingDimmer extends ZigBeeDevice {
 			if (callNow) func.apply(context, args);
 		};
 	}
+
+	/**
+	 * Plain JS implementation of Underscore's _.throttle.
+	 * @param func
+	 * @param wait
+	 * @returns {Function}
+	 */
+	throttle(fn, wait) {
+		let time = Date.now();
+		return function () {
+			if ((time + wait - Date.now()) < 0) {
+				fn();
+				time = Date.now();
+			}
+		};
+	}
+
 }
 
 module.exports = RemoteRotatingDimmer;
