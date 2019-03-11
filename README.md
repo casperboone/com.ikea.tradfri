@@ -3,6 +3,9 @@
 This app allows you to connect your IKEA Trådfri Devices to Homey
 
 ### Changelog
+Version 1.2.12
+* Add productId for IKEA Trådfri Transformer 10W
+
 Version 1.2.11
 * Add support for Tunable Spot (GU10) with mirror (halogen) appearance
 * Improved error message on failed command
@@ -17,7 +20,7 @@ Version 1.2.4
 * Update Transformer icon
 
 Version 1.2.3
-* Added support for IKEA Trådfri Transformer 10w and 30w
+* Added support for IKEA Trådfri Transformer 10W and 30W
 
 Version 1.2.1
 * Updated icons
