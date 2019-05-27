@@ -3,6 +3,9 @@
 This app allows you to connect your IKEA Trådfri Devices to Homey
 
 ### Changelog
+Version 1.2.14
+* Add productId for IKEA Trådfri Tunable White Bulb (E14)
+
 Version 1.2.13
 * Add support for IKEA Trådfri Signal Repeater
 
