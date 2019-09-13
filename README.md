@@ -3,7 +3,7 @@
 This app allows you to connect your IKEA Trådfri Devices to Homey
 
 ### Changelog
-Version 1.3.1
+Version 1.4.2
 * Adds support for Fyrtur roller blinds
 * Adds support for Kadrilj roller blinds
 * Adds support for 30W dimmable transformer
