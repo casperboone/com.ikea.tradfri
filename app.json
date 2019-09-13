@@ -489,7 +489,8 @@
         "productId": [
           "TRADFRI bulb E27 opal 1000lm",
           "TRADFRI bulb E27 W opal 1000lm",
-          "TRADFRI bulb E27 WW clear 250lm"
+          "TRADFRI bulb E27 WW clear 250lm",
+          "TRADFRI bulb E27 WW 806lm"
         ],
         "deviceId": [
           256,
