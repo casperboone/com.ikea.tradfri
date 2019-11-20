@@ -12,8 +12,9 @@
   "category": [
     "lights"
   ],
-  "version": "1.4.2",
-  "compatibility": ">=1.5.0",
+  "version": "1.5.3",
+  "compatibility": ">=3.0.0",
+  "brandColor": "#0b579e",
   "sdk": 2,
   "author": {
     "name": "Athom B.V.",
@@ -131,7 +132,8 @@
           "TRADFRI bulb E26 WS opal 980lm",
           "TRADFRI bulb E26 WS�opal 980lm",
           "TRADFRI bulb E26 WS�opal 980lm",
-          "TRADFRI bulb E27 WS clear 950lm"
+          "TRADFRI bulb E27 WS clear 950lm",
+          "TRADFRI bulb E27 WS clear 806lm"
         ],
         "deviceId": [
           544,
@@ -420,6 +422,11 @@
       },
       "class": "sensor",
       "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
         "productId": [
@@ -923,6 +930,11 @@
         "measure_battery",
         "windowcoverings_set"
       ],
+      "energy": {
+        "batteries": [
+          "OTHER"
+        ]
+      },
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
         "productId": [
@@ -956,6 +968,11 @@
         "measure_battery",
         "windowcoverings_set"
       ],
+      "energy": {
+        "batteries": [
+          "OTHER"
+        ]
+      },
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
         "productId": [
