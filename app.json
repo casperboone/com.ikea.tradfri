@@ -43,7 +43,8 @@
       "zigbee": {
         "manufacturerName": "IKEA of Sweden",
         "productId": [
-          "TRADFRI signal repeater"
+          "TRADFRI signal repeater",
+          "TRADFRI Signal Repeater"
         ],
         "deviceId": 8,
         "profileId": [
