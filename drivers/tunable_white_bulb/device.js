@@ -52,6 +52,12 @@ class TunableWhiteBulb extends ZigBeeLightDevice {
 					usageOff: 0.5,
 					usageOn: 12.5
 				}
+			},
+			'TRADFRI bulb E27 WS clear 806lm': {
+				approximation: {
+					usageOff: 0.5,
+					usageOn: 9
+				}
 			}
 		}
 	}
