@@ -10,5 +10,8 @@
   },
   "1.7.2": {
     "en": "Updated to the latest version of the Homey Apps SDK, added support for Wireless Dimmer, Motion Sensor, Remote Control (5-button), Up/Down Remote Control, and implemented various bug fixes and improvements."
+  },
+  "1.7.3": {
+    "en": "Updated to the latest version of the Homey Apps SDK, added support for Wireless Dimmer, Motion Sensor, Remote Control (5-button), Up/Down Remote Control, changed the way color temperature is calculated, and implemented various bug fixes and improvements."
   }
 }
