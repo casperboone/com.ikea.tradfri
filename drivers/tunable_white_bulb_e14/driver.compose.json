@@ -24,7 +24,8 @@
     "manufacturerName": "IKEA of Sweden",
     "productId": [
       "TRADFRI bulb E14 WS opal 400lm",
-      "TRADFRI bulb E14 WS opal 600lm"
+      "TRADFRI bulb E14 WS opal 600lm",
+      "TRADFRI bulb E14 WS 470lm"
     ],
     "endpoints": {
       "1": {
