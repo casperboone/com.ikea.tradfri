@@ -1,5 +1,6 @@
 ---
 name: This issue tracker is disabled
+about: This issue tracker is disabled
 
 ---
 
