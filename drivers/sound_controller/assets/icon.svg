@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <title>sound_controller/icon</title>
+  <g id="sound_controller/icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="matrix(0.519397, 0, 0, 0.519397, -1.891847, -11.423889)" style="">
+    <ellipse id="Oval" stroke="#000000" stroke-width="20" cx="480" cy="336.5" rx="444" ry="247.5"/>
+    <path d="M26,351.637795 L26.8466941,351.639664 C26.2849572,346.408778 26,341.135615 26,335.824803 C26,193.984381 229.262724,79 480,79 C730.737276,79 934,193.984381 934,335.824803 C934,341.135615 933.715043,346.408778 933.153306,351.639664 L934,351.637795 L934,647.177165 C934,792.330209 730.737276,910 480,910 C231.770096,910 30.0700019,794.671838 26.060823,651.523421 L26,647.177165 L26,351.637795 Z" id="Path" stroke="#000000" stroke-width="40"/>
+    <path d="M 36.04 616.942 C 52.398 755.39 229.775 862.765 481.177 862.765 C 732.578 862.765 881.013 754.176 926.314 614.513" id="Path" stroke="#000000" stroke-width="20" style=""/>
+    <text style="font-size: 36px; font-family: Roboto; white-space: pre;" transform="matrix(1, 0, 0, 2.528809, 353.28067, 566.007507)">sudo snap install boxy-svg</text>
+    <ellipse id="ellipse-1" stroke="#000000" stroke-width="20" cx="201.188" cy="303.119" rx="93.903" ry="46.46" style="" transform="matrix(0.981009, -0.19396, 0.19396, 0.981009, -51.116335, 90.992184)"/>
+  </g>
+</svg>

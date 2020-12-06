@@ -1,0 +1,99 @@
+{
+  "actions": [
+    {
+      "id": "sync_current_value",
+      "title": {
+        "en": "Synchronize volume",
+        "nl": "Synchoniseer volume",
+        "de": "Lautstärke synchronisieren"
+      },
+      "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=sound_controller"
+      },
+      {
+        "name": "new_value",
+        "type": "number",
+        "label": {
+          "nl": "Nieuw waarde",
+          "en": "New value",
+          "de": "Neuer Wert"
+        },
+        "value": 0.0,
+        "attr": {
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01
+        }
+      }]
+    }
+  ],
+  "triggers": [
+    {
+      "id": "volume_rotated",
+      "deprecated": true,
+      "title": {
+        "en": "Volume was rotated",
+        "nl": "Volume is gedraaid",
+        "de": "Lauter wurde gedreht"
+      },
+      "tokens": [
+        {
+          "name": "value",
+          "type": "number",
+          "title": {
+            "en": "Value",
+            "nl": "Waarde",
+            "de": "Wert"
+          },
+          "example": 0.65
+        }
+      ]
+    },
+    {
+      "id": "volume_rotate_stopped",
+      "title": {
+        "en": "Volume is rotated",
+        "nl": "Volume is gedraaid",
+        "de": "Lauter wurde gedreht"
+      },
+      "tokens": [
+        {
+          "name": "value",
+          "type": "number",
+          "title": {
+            "en": "Value",
+            "nl": "Waarde",
+            "de": "Wert"
+          },
+          "example": 0.65
+        }
+      ]
+    },
+    {
+      "id": "pressed_1x",
+      "title": {
+        "en": "The Button was pressed once.",
+        "nl": "De knop is een keer ingedrukt.",
+        "de": "Die Taste wurde einmal gedrückt."
+      }
+    },
+    {
+      "id": "pressed_2x",
+      "title": {
+        "en": "The Button was pressed two times.",
+        "nl": "De knop is twee keer ingedrukt.",
+        "de": "Die Taste wurde zweimal gedrückt."
+      }
+    },
+    {
+      "id": "pressed_3x",
+      "title": {
+        "en": "The Button was pressed three times.",
+        "nl": "De Knop is drie keer ingedrukt.",
+        "de": "Die Taste wurde dreimal gedrückt."
+      }
+    }
+  ]
+}
