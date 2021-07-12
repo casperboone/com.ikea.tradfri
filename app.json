@@ -12,7 +12,7 @@
   "category": [
     "lights"
   ],
-  "version": "1.8.4",
+  "version": "1.8.5",
   "compatibility": ">=5.0.0",
   "brandColor": "#0b579e",
   "sdk": 3,
@@ -25,6 +25,10 @@
       {
         "name": "Lucas van der Have",
         "email": "lucasvdhave@gmail.com"
+      },
+      {
+        "name": "Bram Oosterhuis",
+        "email": "bram.oosterhuis.nl@gmail.com"
       }
     ]
   },
@@ -941,6 +945,55 @@
       "id": "rollerblind_kadrilj"
     },
     {
+      "id": "shortcut_button",
+      "name": {
+        "en": "Shortcut Button",
+        "nl": "Sneltoets",
+        "de": "Shortcut-Button"
+      },
+      "class": "remote",
+      "capabilities": [
+        "alarm_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI SHORTCUT Button"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              5,
+              4096
+            ],
+            "bindings": [
+              1,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/remote_control/assets/learnmode.svg",
+          "instruction": {
+            "en": "Open up the Remote Control to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+            "nl": "Maak de Sneltoets open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen.",
+            "de": "Öffne den Fernbedienung, um auf die Koppeln-Taste zuzugreifen. Drücke die Taste 4 Mal in 5 Sekunden."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/remote_control/assets/images/large.png",
+        "small": "/drivers/remote_control/assets/images/small.png"
+      }
+    },
+    {
       "name": {
         "en": "Signal Repeater",
         "nl": "Signaalversterker"
@@ -1509,6 +1562,34 @@
         ]
       },
       {
+        "id": "shortcut_short_press",
+        "title": {
+          "en": "On button was short pressed",
+          "nl": "Aan knop is kort ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=shortcut_button"
+          }
+        ]
+      },
+      {
+        "id": "shortcut_long_press",
+        "title": {
+          "en": "On button was long pressed",
+          "nl": "Aan knop is lang ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=shortcut_button"
+          }
+        ]
+      },
+      {
         "id": "volume_rotated",
         "deprecated": true,
         "title": {
@@ -1644,6 +1725,11 @@
           "en": "Synchronize volume",
           "nl": "Synchoniseer volume",
           "de": "Lautstärke synchronisieren"
+        },
+        "titleFormatted": {
+          "en": "Synchronize [[device]] volume with [[new_value]]",
+          "nl": "Synchoniseer [[device]] volume met [[new_value]]",
+          "de": "Lautstärke [[new_value]] synchronisieren mit [[device]] "
         },
         "args": [
           {
