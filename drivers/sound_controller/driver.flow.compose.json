@@ -6,6 +6,11 @@
         "en": "Synchronize volume",
         "nl": "Synchoniseer volume",
         "de": "Lautstärke synchronisieren"
+      },        
+      "titleFormatted": {
+        "en": "Synchronize [[device]] volume with [[new_value]]",
+        "nl": "Synchoniseer [[device]] volume met [[new_value]]",
+        "de": "Lautstärke [[new_value]] synchronisieren mit [[device]] "
       },
       "args": [{
         "name": "device",
