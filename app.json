@@ -976,6 +976,81 @@
     },
     {
       "name": {
+        "en": "SYMFONISK sound remote",
+        "nl": "SYMFONISK afstandsbediening",
+        "de": "SYMFONISK Fernbedienung"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "SYMFONISK Sound Controller"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              4096
+            ],
+            "bindings": [
+              1,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/sound_controller/assets/learnmode.svg",
+          "instruction": {
+            "en": "Open up the symfonisk sound remote to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+            "nl": "Maak de symfonisk afstandsbediening open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen.",
+            "de": "Öffne den symfonisk fernbedienung, um auf die Koppeln-Taste zuzugreifen. Drücke die Taste 4 Mal in 5 Sekunden."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/sound_controller/assets/images/large.png",
+        "small": "/drivers/sound_controller/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "sensitivity",
+          "type": "number",
+          "label": {
+            "nl": "Volume gevoeligheid",
+            "en": "Volume sensitivity",
+            "de": "Lauter empfindlichkeit"
+          },
+          "value": 0.5,
+          "attr": {
+            "min": 0.1,
+            "max": 1,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "relative",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "nl": "Rapporteer volume relatief",
+            "en": "Report volume relative",
+            "de": "Berichtsvolumen relativ"
+          }
+        }
+      ],
+      "id": "sound_controller"
+    },
+    {
+      "name": {
         "en": "Tunable Spot (GU10)",
         "nl": "Instelbare Witte Spot (GU10)",
         "de": "Einstellbarer Spot (GU10)"
@@ -1434,6 +1509,106 @@
         ]
       },
       {
+        "id": "volume_rotated",
+        "deprecated": true,
+        "title": {
+          "en": "Volume was rotated",
+          "nl": "Volume is gedraaid",
+          "de": "Lauter wurde gedreht"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert"
+            },
+            "example": 0.65
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sound_controller"
+          }
+        ]
+      },
+      {
+        "id": "volume_rotate_stopped",
+        "title": {
+          "en": "Volume is rotated",
+          "nl": "Volume is gedraaid",
+          "de": "Lauter wurde gedreht"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert"
+            },
+            "example": 0.65
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sound_controller"
+          }
+        ]
+      },
+      {
+        "id": "pressed_1x",
+        "title": {
+          "en": "The Button was pressed once.",
+          "nl": "De knop is een keer ingedrukt.",
+          "de": "Die Taste wurde einmal gedrückt."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sound_controller"
+          }
+        ]
+      },
+      {
+        "id": "pressed_2x",
+        "title": {
+          "en": "The Button was pressed two times.",
+          "nl": "De knop is twee keer ingedrukt.",
+          "de": "Die Taste wurde zweimal gedrückt."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sound_controller"
+          }
+        ]
+      },
+      {
+        "id": "pressed_3x",
+        "title": {
+          "en": "The Button was pressed three times.",
+          "nl": "De Knop is drie keer ingedrukt.",
+          "de": "Die Taste wurde dreimal gedrückt."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sound_controller"
+          }
+        ]
+      },
+      {
         "id": "up",
         "title": {
           "en": "Up button was pressed",
@@ -1458,6 +1633,43 @@
             "type": "device",
             "name": "device",
             "filter": "driver_id=updown_remote_control"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "sync_current_value",
+        "title": {
+          "en": "Synchronize volume",
+          "nl": "Synchoniseer volume",
+          "de": "Lautstärke synchronisieren"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sound_controller"
+          },
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=sound_controller"
+          },
+          {
+            "name": "new_value",
+            "type": "number",
+            "label": {
+              "nl": "Nieuw waarde",
+              "en": "New value",
+              "de": "Neuer Wert"
+            },
+            "value": 0,
+            "attr": {
+              "min": 0,
+              "max": 1,
+              "step": 0.01
+            }
           }
         ]
       }
