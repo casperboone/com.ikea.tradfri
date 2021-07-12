@@ -11,7 +11,7 @@
   "category": [
     "lights"
   ],
-  "version": "1.8.4",
+  "version": "1.8.5",
   "compatibility": ">=5.0.0",
   "brandColor": "#0b579e",
   "sdk": 3,
@@ -24,6 +24,10 @@
       {
         "name": "Lucas van der Have",
         "email": "lucasvdhave@gmail.com"
+      },
+      {
+        "name": "Bram Oosterhuis",
+        "email": "bram.oosterhuis.nl@gmail.com"
       }
     ]
   },
