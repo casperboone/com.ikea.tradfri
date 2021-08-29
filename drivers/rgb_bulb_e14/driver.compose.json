@@ -34,7 +34,7 @@
   "zigbee": {
     "manufacturerName": "IKEA of Sweden",
     "productId": [
-      "TRADFRI bulb E14 CWS opal 600lm"
+      "TRADFRI bulb E14 CWS opal 600lm",
       "TRADFRI bulb E14 CWS 470lm"
     ],
     "endpoints": {
