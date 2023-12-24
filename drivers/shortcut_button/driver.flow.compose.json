@@ -1,0 +1,18 @@
+{
+  "triggers": [
+    {
+      "id": "shortcut_short_press",
+      "title": {
+        "en": "On button was short pressed",
+        "nl": "Aan knop is kort ingedrukt"
+      }
+    },
+    {
+      "id": "shortcut_long_press",
+      "title": {
+        "en": "On button was long pressed",
+        "nl": "Aan knop is lang ingedrukt"
+      }
+    }
+  ]
+}
